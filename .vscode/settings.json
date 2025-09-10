@@ -1,0 +1,14 @@
+{
+    "ecsstractor_port.bem_nesting": true,
+    "workbench.startupEditor": "none",
+    "editor.fontSize": 20,    
+    "editor.smoothScrolling": true,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.hover.enabled": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "editor.lineHeight": 30,
+    "security.workspace.trust.enabled": false,
+    "explorer.confirmDelete": false
+}

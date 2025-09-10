@@ -1,0 +1,184 @@
+@import "resets.scss", "fonts.scss";
+
+[class*='__container']{
+    max-width: 551.99px;
+    margin: 0 auto;
+}
+
+body{
+	font-family: Poppins, sans-serif;
+}
+
+/*=====================================*/
+//-----------------------------------------HEADER--------------------------------------------------------------
+
+.header {
+
+		// .header__container
+
+		&__container {
+			padding: 19px 0 19px 0;
+
+			border-bottom: 1px solid rgba(240, 240, 240, 1);
+		}
+
+		// .header__logo
+
+		&__logo-box {
+			text-align: center;
+		}
+
+		&__logo {
+			
+		}
+}
+
+
+//-----------------------------------------CARTS--------------------------------------------------------------
+
+.cards {
+
+		// .cards__container
+
+		&__container {
+			padding-top: 20px;
+			padding-bottom: 41px;
+		}
+
+		// .cards__title
+
+		&__title {
+			color: var(--almost black, rgba(28, 30, 35, 1));
+			font-size: 30px;
+			line-height: 36px;
+		}
+
+		// .cards__box
+
+		&__box {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			row-gap: 72px;
+			column-gap: 16px;
+
+			margin-top: 44px;
+		}
+
+		// .cards__item
+
+		&__item {
+		}
+
+		// .cards__img
+
+		&__img {
+		}
+
+		// .cards__cont
+
+		&__cont {
+			margin-top: 18px;
+		}
+
+		// .cards__text
+
+		&__text {
+			color: var(--almost black, rgba(51, 51, 51, 1));
+			font-size: 20px;
+			line-height: 100%;
+		}
+
+		// .cards__price
+
+		&__price {
+			color: rgba(72, 157, 255, 1);
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 24px;
+		}
+
+		// .cards__btn
+
+		&__btn-box {
+			margin-top: 16px;
+		}
+
+		&__btn{
+			display: inline-block;
+			padding: 16px 50px;
+			border-radius: 7px;
+			background: var(--color--primary, rgba(72, 157, 255, 1));
+
+			color: rgba(255, 255, 255, 1);
+			font-size: 15px;
+			font-weight: 700;
+			line-height: 16px;
+			text-align: center;
+
+			transition: all 0.3s ease;
+
+			&:hover{
+				background: var(--color--primary, rgb(14, 126, 255));
+			}
+		}
+}
+
+// -----------------------------------------FOOTER--------------------------------------------------------------
+
+.footer {
+
+		// .footer__container
+
+		&__container {
+			border-top: 1px solid rgba(240, 240, 240, 1);
+			padding: 24px 0 24px 0;
+
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+		}
+
+		// .footer__c
+
+		&__c {
+			color: rgba(82, 95, 127, 1);
+			font-size: 12px;
+			line-height: 20px;
+			text-align: center;
+		}
+
+		// .footer__text
+
+		&__text {
+			font-size: 12px;
+			line-height: 20px;
+			text-align: center;
+		}
+
+		// .footer__icons
+
+		&__icons {
+			display: flex;
+			justify-content: center;
+			gap: 16px;
+
+		}
+		&__email{
+			color: rgba(72, 157, 255, 1);
+		}
+}
+
+
+// -----------------------------------------MEDIA--------------------------------------------------------------
+
+@media (max-width:664.98px){
+	.cards__box{
+		grid-template-columns: 1fr;
+		row-gap: 45px;
+		justify-items: center;
+	}
+
+	.cards__title{
+		text-align: center;
+	}
+}
